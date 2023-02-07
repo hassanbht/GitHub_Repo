@@ -1,0 +1,42 @@
+@baseUrl = https://api.github.com
+@token = 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
+@acceptHeader = application/vnd.github.v3.html+json
+
+GET {{baseUrl}}/user/starred
+  ?page=1
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+# If-None-Match: W/"2be29895933ee045023998cab0223520976c00c1c23e85bd6ca71706aa7c4cdd"
+
+###
+
+GET {{baseUrl}}/search/repositories
+  ?q=flutter
+  &page=1
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+
+###
+
+GET {{baseUrl}}/repos/flutter/flutter/readme
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+
+###
+
+PUT {{baseUrl}}/user/starred/ResoDev/foundations-stateful-widget
+Authorization: bearer {{token}}
+Content-Length: 0
+Accept: {{acceptHeader}}
+
+###
+
+DELETE {{baseUrl}}/user/starred/ResoDev/foundations-stateful-widget
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+
+###
+
+GET {{baseUrl}}/user/starred/ResoDev/foundations-stateful-widget
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}

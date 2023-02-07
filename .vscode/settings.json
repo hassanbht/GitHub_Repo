@@ -1,0 +1,21 @@
+{
+  "editor.fontSize": 12,
+  "window.zoomLevel": 2,
+  "debug.console.fontSize": 12,
+  "terminal.integrated.fontSize": 12,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.freezed.dart": true,
+    "**/*.g.dart": true,
+    "**/.gitkeep": false
+  },
+  "explorerExclude.backup": null,
+  "cSpell.words": [
+    "dartz",
+    "sembast"
+  ]
+}
