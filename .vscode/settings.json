@@ -9,11 +9,12 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
+    "**/Thumbs.db": true,
     "**/*.freezed.dart": true,
     "**/*.g.dart": true,
     "**/.gitkeep": false
   },
-  "explorerExclude.backup": null,
+  "explorerExclude.backup": {},
   "cSpell.words": [
     "dartz",
     "sembast"
