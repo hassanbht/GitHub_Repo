@@ -1,5 +1,5 @@
 @baseUrl = https://api.github.com
-@token = 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
+@token = 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
 @acceptHeader = application/vnd.github.v3.html+json
 
 GET {{baseUrl}}/user/starred
