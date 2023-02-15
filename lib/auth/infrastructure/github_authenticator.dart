@@ -27,7 +27,7 @@ class GithubAuthenticator {
   GithubAuthenticator(this._credentialsStorage, this._dio);
 
   static const clientId = 'a82889a811d39e91c69c';
-  static const clientSecret = 'ebecbff1feb5e4a545cfde115c8080491a982071';
+  static const clientSecret = '';
   static const scopes = ['read:user', 'repo'];
   static final authorizationEndpoint =
       Uri.parse('https://github.com/login/oauth/authorize');
