@@ -1,8 +1,5 @@
-import 'dart:io';
-
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:github_repo_app/auth/domain/auth_failure.dart';
 import 'package:github_repo_app/auth/infrastructure/credentials_storage/credentials_storage.dart';
@@ -27,7 +24,7 @@ class GithubAuthenticator {
   GithubAuthenticator(this._credentialsStorage, this._dio);
 
   static const clientId = 'a82889a811d39e91c69c';
-  static const clientSecret = '';
+  static const clientSecret = 'ebecbff1feb5e4a545cfde115c8080491a982071';
   static const scopes = ['read:user', 'repo'];
   static final authorizationEndpoint =
       Uri.parse('https://github.com/login/oauth/authorize');
