@@ -1,13 +1,17 @@
 import 'package:auto_route/annotations.dart';
-import 'package:github_repo_app/auth/presentation/sign_in_page.dart';
-import 'package:github_repo_app/presentation/starred_repos_page.dart';
-import 'package:github_repo_app/splash/presentation/splash_page.dart';
+import '../../../auth/presentation/sign_in_page.dart';
+import '../../../github/repos/starred_repos/presentation/starred_repos_page.dart';
+import '../../../splash/presentation/splash_page.dart';
+import '../../../auth/presentation/authorization_page.dart';
 
 @MaterialAutoRouter(
   routes: [
     MaterialRoute(page: SplashPage, initial: true),
-    MaterialRoute(page: SignInPage, path: '/sign_in'),
-    MaterialRoute(page: StarredReposPage, path: '/Starred')
+    MaterialRoute(page: SignInPage, path: '/sign-in'),
+    MaterialRoute(page: AuthorizationPage, path: '/auth'),
+    MaterialRoute(page: StarredReposPage, path: '/starred'),
+    // MaterialRoute(page: SearchedReposPage, path: '/search'),
+    // MaterialRoute(page: RepoDetailPage, path: '/detail'),
   ],
   replaceInRouteName: 'Page,Route',
 )

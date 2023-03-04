@@ -1,6 +1,6 @@
 {
   "editor.fontSize": 12,
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "debug.console.fontSize": 12,
   "terminal.integrated.fontSize": 12,
   "files.exclude": {
@@ -10,8 +10,8 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-    "**/*.freezed.dart": true,
-    "**/*.g.dart": true,
+    "**/*.freezed.dart": false,
+    "**/*.g.dart": false,
     "**/.gitkeep": false
   },
   "explorerExclude.backup": {},
