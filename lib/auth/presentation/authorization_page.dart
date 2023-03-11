@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:flutter/material.dart';
 // Import for Android features.
 import 'package:webview_flutter_android/webview_flutter_android.dart';

@@ -2,6 +2,7 @@ import 'dart:ffi';
 
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
+import 'package:github_repo_app/core/shared/providers.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'package:github_repo_app/auth/application/auth_notifier.dart';
@@ -10,7 +11,7 @@ import 'package:github_repo_app/core/presentation/routes/app_router.gr.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 final initializationProvider = FutureProvider<Unit>((ref) async {
-  // await ref.read(sembastProvider).init();
+  await ref.read(sembaseProvider).init();
   // ref.read(dioProvider)
   //   ..options = BaseOptions(
   //     headers: {

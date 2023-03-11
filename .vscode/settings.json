@@ -10,8 +10,8 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-    "**/*.freezed.dart": false,
-    "**/*.g.dart": false,
+    "**/*.freezed.dart": true,
+    "**/*.g.dart": true,
     "**/.gitkeep": false
   },
   "explorerExclude.backup": {},
